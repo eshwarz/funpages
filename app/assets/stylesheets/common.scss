@@ -1,8 +1,36 @@
 body {
 	margin: auto;
 	font-family: Verdana, Arial, 'Sans Serif';
-	.container {
-		width: 980px;
-		margin: auto;
-	}
+}
+
+.content {
+	background: #DDD;
+}
+.container {
+	width: 980px;
+	margin: auto;
+	border: 1px solid #333;
+}
+
+.container_pad {
+	padding: 20px;
+}
+
+.mt50 {
+	margin-top: 50px;
+}
+
+.left_panel, .right_panel {
+	float: left;
+}
+.left_panel {
+	width: 200px;
+	background: #333;
+	color: #FFF;
+}
+.right_panel {
+	width: 780px;
+}
+.clearfix {
+	clear: both;
 }

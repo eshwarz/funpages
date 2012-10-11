@@ -6,10 +6,12 @@ html
 		= javascript_include_tag "application"
 		= csrf_meta_tags
 	body
-		header
-			.container
-				= render :partial => 'shared/navigation'
-
 		.container.mt50.content
-			.container_pad
-				= yield
+			.left_panel
+				.side_links
+					= render :partial => 'shared/navigation'
+				.pam
+			.right_panel
+				.pam
+					= yield
+			.clearfix

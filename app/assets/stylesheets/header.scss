@@ -1,0 +1,15 @@
+header {
+	background: #333;
+	color: #FFF;
+	a {
+		color: #AAA;
+		padding: 5px;
+		text-decoration: none;
+		display: block;
+		float: left;
+		&:hover {
+			background: #777;
+			color: #FFF;
+		}
+	}
+}
