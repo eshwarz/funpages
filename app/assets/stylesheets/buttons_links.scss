@@ -1,17 +1,5 @@
-@mixin side_links {
-	a {
-		background: #333;
-		color: #AAA;
-		padding: 7px 20px;
-		display: block;
-		text-decoration: none;
-		&:hover {
-			background: #777;
-			color: #FFF;
-		}
-	}
-}
+@import 'mixins';
 
 .side_links {
-	@include side_links;
+	@include navigation_links;
 }

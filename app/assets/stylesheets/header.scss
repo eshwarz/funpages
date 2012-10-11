@@ -1,15 +1,9 @@
+@import 'mixins';
+
 header {
 	background: #333;
-	color: #FFF;
+	@include navigation_links;
 	a {
-		color: #AAA;
-		padding: 5px;
-		text-decoration: none;
-		display: block;
 		float: left;
-		&:hover {
-			background: #777;
-			color: #FFF;
-		}
 	}
 }

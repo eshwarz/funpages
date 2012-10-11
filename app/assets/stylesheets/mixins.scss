@@ -1,0 +1,21 @@
+@mixin navigation_links {
+	a {
+		background: #333;
+		color: #AAA;
+		padding: 7px 20px;
+		display: block;
+		text-decoration: none;
+		&:hover {
+			background: #777;
+			color: #FFF;
+		}
+		&:focus {
+			background: #555;
+			color: #FFF;
+		}
+		// active is at thw bottom to override the focus css
+		&:active {
+			color: #F00;
+		}
+	}
+}
