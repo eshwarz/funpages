@@ -1,0 +1,18 @@
+h3 Posts
+
+.fr= link_to 'New Post', new_post_path
+.clearfix
+
+- @posts.each do |p|
+	= p.name
+	br
+	.fl= p.message
+	.fr
+		= link_to 'show', post_path(p.id)
+		= " | "
+		= link_to 'Edit', edit_post_path(p.id)
+		= " | "
+		= link_to 'Delete', post_path(p.id), :method => 'Delete', :confirm => 'You might me nuts?? Seriously??'
+	.clearfix
+
+	hr

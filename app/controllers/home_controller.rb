@@ -11,4 +11,8 @@ class HomeController < ApplicationController
 		render :layout => 'application'
 	end
 
+	def posts
+		@posts = Post.all
+	end
+
 end
