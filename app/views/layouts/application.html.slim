@@ -10,6 +10,8 @@ html
 			.container
 				= render :partial => 'shared/navigation'
 
+		= render 'shared/flash_messages'
+		
 		.container.mt50.content
 			.container_pad
 				= yield

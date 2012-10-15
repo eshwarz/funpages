@@ -3,6 +3,7 @@
 body {
 	margin: auto;
 	font-family: Verdana, Arial, 'Sans Serif';
+	font-size: 14px;
 }
 
 .content {
@@ -42,4 +43,11 @@ body {
 
 a:focus {
 	outline-style: none;
+}
+
+.notice, .alert {
+	background: #DDD;
+	padding: 5px;
+	width: 980px;
+	margin: auto;
 }
