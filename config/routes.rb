@@ -16,6 +16,7 @@ Funpages::Application.routes.draw do
 	controller :profile do
 		match 'profile', :action => 'index', :as => 'profile'
 		match 'profile/edit', :action => 'edit', :as => 'profile_edit'
+		match 'profile/update', :action => 'update', :as => 'profile_update'
 	end
 
 	resources :posts
