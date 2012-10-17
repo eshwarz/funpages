@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user: 
+  about_me: MyText
+  gender: MyString
+  dob: 2012-10-17
+  present_place: MyString
+  native_place: MyString
+  hobbies: MyText
+
+two:
+  user: 
+  about_me: MyText
+  gender: MyString
+  dob: 2012-10-17
+  present_place: MyString
+  native_place: MyString
+  hobbies: MyText

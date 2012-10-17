@@ -16,7 +16,7 @@ class PostsController < ApplicationController
 
 	def create
 		if params[:post]
-			Post.create params[:post]
+			current_user.posts.create params[:post]
 		end
 		redirect_to posts_path
 	end

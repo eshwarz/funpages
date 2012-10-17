@@ -13,6 +13,11 @@ Funpages::Application.routes.draw do
 		match 'second', :action => 'second', :as => 'second'
 	end
 
+	controller :profile do
+		match 'profile', :action => 'index', :as => 'profile'
+		match 'profile/edit', :action => 'edit', :as => 'profile_edit'
+	end
+
 	resources :posts
 	
 end

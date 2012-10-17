@@ -11,14 +11,28 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121015071500) do
+ActiveRecord::Schema.define(:version => 20121017070747) do
 
   create_table "posts", :force => true do |t|
-    t.string   "name"
     t.text     "message"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.integer  "user_id"
   end
+
+  create_table "profiles", :force => true do |t|
+    t.integer  "user_id"
+    t.text     "about_me"
+    t.string   "gender"
+    t.date     "dob"
+    t.string   "present_place"
+    t.string   "native_place"
+    t.text     "hobbies"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  add_index "profiles", ["user_id"], :name => "index_profiles_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false

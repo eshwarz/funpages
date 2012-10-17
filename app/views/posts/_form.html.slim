@@ -1,4 +1,4 @@
 = semantic_form_for @post do |f|
-	= f.input :name
-	= f.input :message
-	= f.submit 'Post'
+	= f.input :message, :input_html => { :rows => 5 }
+	.fr= f.submit 'Post'
+	.clearfix

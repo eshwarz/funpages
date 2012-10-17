@@ -1,0 +1,9 @@
+= semantic_form_for @profile do |f|
+	= f.input :about_me, :input_html => { :rows => 4 }
+	= f.input :gender, :as => 'select', :prompt => 'Select Gender', :collection => Profile.genders
+	= f.input :dob
+	= f.input :present_place
+	= f.input :native_place
+	= f.input :hobbies, :input_html => { :rows => 4 }
+
+	= f.submit 'Save'
